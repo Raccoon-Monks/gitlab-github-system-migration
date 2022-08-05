@@ -1,3 +1,8 @@
 # FOLDERS
-
 env
+scripts
+__pycache__
+
+# FILES
+gitlab_repositories/*.zip
+*.json
