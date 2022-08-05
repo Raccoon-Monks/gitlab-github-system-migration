@@ -6,7 +6,15 @@ import requests
 
 
 class GitLab:
-    def __init__(self, token) -> None:
+    def __init__(self, token: str) -> None:
+        '''Class GitLab is going to help you with the authentication, searching and downloads.
+        
+        Args:
+            token: GitLab Access Token
+            
+        Returns:
+            None
+        '''
         gitlab_url_base = 'https://gitlab.com/api'
         gitlab_groups_endpoint = '/v4/groups/'
         gitlab_projects_endpoint = '/v4/projects/'
@@ -75,7 +83,7 @@ class GitLab:
     def farewell() -> None:
         msg = (
             'I had my reasons for moving on\n'
-            'These days liquor don\'t write my son\n'
+            'These days liquor don\'t write my song\n'
             '\n'
             'It ain\'t right for a family man\n'
             'To build a house on shifting sand\n'
